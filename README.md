@@ -1,4 +1,4 @@
-cubexio
+cubex.io
 =======
 
-Cubex Website
+This is the office source for the cubex.io website

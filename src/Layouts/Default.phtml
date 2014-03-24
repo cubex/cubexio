@@ -1,0 +1,124 @@
+<head>
+  <title>Cubex</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <?php
+  $sheets = (array)\Packaged\Dispatch\AssetManager::getUrisByType('css');
+  foreach($sheets as $css => $opt)
+  {
+    echo '<link rel="stylesheet" href="' . $css . '">';
+  }
+  ?>
+</head>
+<body>
+<div id="sf-wrap">
+  <header id="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-3">
+          <div class="logo">
+            <a href="/">
+              <img src="<?php echo \Packaged\Dispatch\AssetManager::assetType()
+                ->getResourceUri("/img/cubex-logo.png"); ?>"
+                   alt="Cubex Logo"/>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+          <nav class="main pull-right">
+            <ul class="strtoupper list-inline">
+              <li><a href="/getting-started">Getting Started</a></li>
+              <li><a href="/tutorials">Tutorials</a></li>
+              <li><a href="/cookbook">Cookbook</a></li>
+              <li><a href="/docs">Documentation</a></li>
+              <li><a href="http://blog.cubex.io">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <?php echo $this->hero(); ?>
+
+  <div class="container" id="main-content">
+    <?php echo $this->content(); ?>
+  </div>
+
+  <div id="sf-push"></div>
+
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-2">
+        <strong>Resources</strong><br/>
+        <a href="https://github.com/cubex/framework">Cubex on GitHub</a><br/>
+        <a href="irc://chat.freenode.net/cubex">IRC Channel</a><br/>
+        <a href="/licence">Licence Information</a>
+      </div>
+      <div class="col-md-2">
+        <strong>Documentation</strong><br/>
+        <a href="/getting-started">Getting Started</a><br/>
+        <a href="/tutorials">Tutorials</a><br/>
+        <a href="/cookbooks">Cookbooks</a><br/>
+        <a href="/docs">Official Docs</a><br/>
+      </div>
+      <div class="col-md-2">
+        <strong>Source Groups</strong><br/>
+        <a href="https://github.com/cubex">Qubes on GitHub</a><br/>
+        <a href="https://github.com/qubes">Qubes on GitHub</a><br/>
+        <a href="https://github.com/bundl">Bundls on GitHub</a><br/>
+        <a href="https://github.com/themed">Themed on GitHub</a><br/>
+      </div>
+      <div class="col-md-2">
+        <strong>Participate</strong><br/>
+        <a href="http://blog.cubex.io">Cubex Blog</a><br/>
+        <a href="https://twitter.com/cubexio">Cubex on Twitter</a><br/>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8 text-center">
+          <hr/>
+          Copyright (c) 2012-<?php echo date("Y"); ?>,
+          Just Develop It Ltd.
+          All Rights Reserved
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-38891222-1']
+  );
+  _gaq.push(
+    ['_trackPageview']
+  );
+
+  (function ()
+  {
+    var ga = document.createElement(
+      'script'
+    );
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName(
+      'script'
+    )[0];
+    s.parentNode.insertBefore(
+      ga, s
+    );
+  })(
+  );
+
+</script>
