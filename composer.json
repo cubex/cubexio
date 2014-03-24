@@ -10,11 +10,18 @@
       "homepage": "http://www.bajb.net"
     }
   ],
+  "repositories":      [
+    {
+      "type": "git",
+      "url":  "https://github.com/cubex/documentation"
+    }
+  ],
   "require":           {
-    "cubex/framework":   "*",
-    "stack/builder":     "*",
-    "packaged/dispatch": "*",
-    "dflydev/markdown":  "*"
+    "cubex/framework":     "*",
+    "cubex/documentation": "*",
+    "stack/builder":       "*",
+    "packaged/dispatch":   "*",
+    "dflydev/markdown":    "*"
   },
   "autoload":          {
     "psr-4": {

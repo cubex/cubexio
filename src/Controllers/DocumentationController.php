@@ -22,7 +22,7 @@ class DocumentationController extends CubexIoController
     $docRoot = $this->getConfigItem('documentation', "source_path", 'docs');
     if(substr($docRoot, 0, 1) !== '/' && substr($docRoot, 1, 1) !== ':')
     {
-      $docRoot = build_path($this->getCubex()->getDocRoot(), $docRoot);
+      $docRoot = build_path(dirname($this->getCubex()->getDocRoot()), $docRoot);
     }
 
     $sidebar = file_get_contents($docRoot . 'contents.md');
