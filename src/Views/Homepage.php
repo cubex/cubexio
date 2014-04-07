@@ -8,6 +8,6 @@ class Homepage extends TemplatedViewModel
 {
   public function __construct(Layout $layout)
   {
-    $layout->insert(new HeroBanner(), 'hero');
+    $layout->insert('hero', new HeroBanner());
   }
 }

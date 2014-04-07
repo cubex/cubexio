@@ -1,5 +1,5 @@
 header#topbar {
-  border-bottom: none;
+  border-bottom: none!important;
 }
 
 header.hero {
