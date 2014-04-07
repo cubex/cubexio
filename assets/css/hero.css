@@ -1,12 +1,14 @@
 header#topbar {
-  border-bottom: none!important;
+  border-bottom: none !important;
 }
 
 header.hero {
-  font-size:     18px;
-  padding:       20px 0;
-  border-bottom: 3px solid #DEDEDE;
-  color:         #ffffff;
+  font-size:        18px;
+  padding:          20px 0;
+  border-bottom:    3px solid #DEDEDE;
+  color:            #ffffff;
+
+  background-position: 0px -82px;
 }
 
 header.hero h1 {
@@ -39,7 +41,6 @@ header.hero hgroup {
   width: 440px;
 }
 
-.hero-links
-{
-  padding-top:10px;
+.hero-links {
+  padding-top: 10px;
 }
