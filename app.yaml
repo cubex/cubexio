@@ -1,8 +1,4 @@
-application: cubex-io
-version: 1
-runtime: php
-api_version: 1
-threadsafe: yes
+runtime: php74
 
 handlers:
 - url: /favicon\.ico

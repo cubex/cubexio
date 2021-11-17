@@ -1,0 +1,14 @@
+<?php
+
+use Packaged\Remarkd\Remarkd;
+
+?>
+<header>
+  <div class="container">
+    <h1>Cubex : The PHP Creativity Framework</h1>
+    <p>Cubex is a web application framework built for performance at scale.</p>
+  </div>
+</header>
+<main>
+  <div class="container"><?= (new Remarkd())->parse(file_get_contents(__DIR__ . '/homepage.md')) ?></div>
+</main>
